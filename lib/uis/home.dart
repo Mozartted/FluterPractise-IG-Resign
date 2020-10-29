@@ -11,12 +11,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomePageState extends State<Home> {
+
   Widget titleObject = Row(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
     children: [
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
           // first view
           Column(
             children: [
@@ -35,8 +33,6 @@ class _HomePageState extends State<Home> {
               SvgPicture.asset('assets/top_header_message.svg'),
             ],
           )
-        ],
-      )
     ],
   );
 
@@ -48,6 +44,7 @@ class _HomePageState extends State<Home> {
             child: ListView(
               children: <Widget>[
                 Container(
+                  padding: EdgeInsets.only(top: 50),
                   child: titleObject,
                 )
               ],
